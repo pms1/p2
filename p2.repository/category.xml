@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+
+   <feature id="p2.dee.feature">
+      <category name="p2.dee.category"/>
+   </feature>
+   <category-def name="p2.dee.category" label="Delta Event Engine Target Platform"/>
+
+</site>
