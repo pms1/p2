@@ -2,7 +2,7 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='p2.repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1434785139155'/>
+    <property name='p2.timestamp' value='1434785167217'/>
   </properties>
   <units size='4'>
     <unit id='p2.dee.feature.feature.jar' version='0.0.1.201506200718'>
