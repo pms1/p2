@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='p2.repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1434785139155'/>
+  </properties>
+  <units size='4'>
+    <unit id='p2.dee.feature.feature.jar' version='0.0.1.201506200718'>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='p2.dee.feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='maven-groupId' value='p2'/>
+        <property name='maven-artifactId' value='p2.dee.feature'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='p2.dee.feature.feature.jar' version='0.0.1.201506200718'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='p2.dee.feature' version='0.0.1.201506200718'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='p2.dee.feature' version='0.0.1.201506200718'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='201506200718.p2.dee.category' version='1.0.0.0-1c_TwvE7735C3E733G5I'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Delta Event Engine Target Platform'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='201506200718.p2.dee.category' version='1.0.0.0-1c_TwvE7735C3E733G5I'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='p2.dee.feature.feature.group' range='[0.0.1.201506200718,0.0.1.201506200718]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='p2.dee.feature.feature.group' version='0.0.1.201506200718' singleton='false'>
+      <update id='p2.dee.feature.feature.group' range='[0.0.0,0.0.1.201506200718)' severity='0'/>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='p2.dee.feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='maven-groupId' value='p2'/>
+        <property name='maven-artifactId' value='p2.dee.feature'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='p2.dee.feature.feature.group' version='0.0.1.201506200718'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='[18.0.0,18.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='p2.dee.feature.feature.jar' range='[0.0.1.201506200718,0.0.1.201506200718]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='com.google.guava' version='18.0.0' singleton='false'>
+      <update id='com.google.guava' range='[0.0.0,18.0.0)' severity='0'/>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='Guava: Google Core Libraries for Java'/>
+        <property name='org.eclipse.equinox.p2.description' value='Guava is a suite of core and expanded libraries that include    utility classes, google&apos;s collections, io classes, and much    much more.    Guava has only one code dependency - javax.annotation,    per the JSR-305 spec.'/>
+        <property name='org.eclipse.equinox.p2.doc.url' value='https://guava-libraries.googlecode.com/'/>
+        <property name='maven-groupId' value='com.google.guava'/>
+        <property name='maven-artifactId' value='guava'/>
+        <property name='maven-version' value='18.0'/>
+      </properties>
+      <provides size='18'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' version='18.0.0'/>
+        <provided namespace='osgi.bundle' name='com.google.guava' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.net' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.html' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.collect' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.primitives' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.base' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.escape' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.cache' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.eventbus' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.util.concurrent' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.hash' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.io' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.xml' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.reflect' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.math' version='18.0.0'/>
+        <provided namespace='java.package' name='com.google.common.annotations' version='18.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='java.package' name='javax.annotation' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='sun.misc' range='0.0.0' optional='true' greedy='false'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.google.guava' version='18.0.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.google.guava&#xA;Bundle-Version: 18.0.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>
