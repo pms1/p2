@@ -10,6 +10,7 @@
 	<modules>
 		<module>p2.parent</module>
 		<module>p2.dee.feature</module>
+		<module>p2.jersey.feature</module>
 		<module>p2.repository</module>
 	</modules>
 

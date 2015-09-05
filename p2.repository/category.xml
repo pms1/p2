@@ -6,4 +6,9 @@
    </feature>
    <category-def name="p2.dee.category" label="Delta Event Engine Target Platform"/>
 
+   <feature id="p2.jersey.feature">
+      <category name="p2.jersey.category"/>
+   </feature>
+   <category-def name="p2.jersey.category" label="Various P2 conversions"/>
+
 </site>
