@@ -137,6 +137,7 @@
 						<pomDependencies>consider</pomDependencies>
 					</configuration>
 				</plugin>
+				<!--
 				<plugin>
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>tycho-packaging-plugin</artifactId>
@@ -155,6 +156,7 @@
 						</jgit.ignore>
 					</configuration>
 				</plugin>
+				-->
 				<!--
 				<plugin>
 					<groupId>org.eclipse.tycho</groupId>
