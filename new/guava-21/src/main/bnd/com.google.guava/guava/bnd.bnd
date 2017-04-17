@@ -1,0 +1,7 @@
+# this is from guava's original bnd receipe, but excludes javax.annotation
+# (was optional before)
+Export-Package: !com.google.common.base.internal,\
+                com.google.common.*
+Import-Package: !javax.annotation,\
+                javax.crypto.*;resolution:=optional,\
+                sun.misc.*;resolution:=optional
