@@ -6,7 +6,8 @@
 	<version>0</version>
 	
 	<packaging>pom</packaging>
-
+	<name>Various P2 Repositories</name>
+	
 	<build>
 	<pluginManagement>
 		<plugins>

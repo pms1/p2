@@ -9,6 +9,7 @@
 
 	<artifactId>jersey</artifactId>
 	<version>2.25</version>
+	<name>Jersey 2.25.x (including Jackson)</name>
 
 	<packaging>tppt-repository</packaging>
 		

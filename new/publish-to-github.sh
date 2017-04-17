@@ -20,7 +20,9 @@ trap 'rm -rf -- "$temp"' EXIT HUP
 )
 
 # build and deploy
-mvn clean package tppt:deploy -Dtppt.deploymentTarget=file:/$(cygpath -m -a $temp) clean
+mvn -Dtppt.deploymentTarget=file:/$(cygpath -m -a $temp) \
+    clean package tppt:deploy tppt:create-deployment-index \
+    clean
 
 # commit changes
 (
